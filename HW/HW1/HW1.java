@@ -3,7 +3,8 @@ package hw1;
 public class HW1 {
 	public static void main(String args[]) {
 		
-		String s="level";
+		String s="Level";
+		s=s.toLowerCase();
 		String rev="";
 		
 		for(int i=s.length()-1;i>=0;i--) {
