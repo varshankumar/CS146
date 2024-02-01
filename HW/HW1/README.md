@@ -1,0 +1,1 @@
+A palinrome is a string that reads the same forwards and backwards. To check if a string was a palindrome, I reveresed the string and compared the reveresed string with the original string to see if they were equal in value. If they were equal in value, then the string was a palindome. If not, the string was not a palindrome.
