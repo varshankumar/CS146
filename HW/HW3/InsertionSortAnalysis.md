@@ -1,11 +1,11 @@
-Insertion sort has a time complexity of O(n^2).
-Insertion sort checks with two loops. 
-The outer loop iterates n-1 times. 
-The inner loop iterates i-1 times where i is incremented to n.
+InsertionSort(A,n)            1
+for i=2 to n                  n-1
+  key=A[i]                    n-1
+  j=i-1                       n-1
+  while j>0 and A[j]>key      (n-1)*i
+    A[j+1]=A[j]               (n-1) * (i-1)
+    j=j-1                     (n-1) * (i-1)
+  A[j+1]                      n-1
+1 + n-1 + n-1 + n-1 +(n-1)*i + (n-1) * (i-1) + (n-1) * (i-1) + n-1
 
-Since both these values (n-1 and i-1) are variable, we can denote them with n.
-
-The number of iterations for the worst and average case would be (n-1)*(i-1) which approximates to n * n or n^2.
-
-Therefore, the time complexity would be O(n^2).
-
+This function is quadratic since the highest order term is (n-1) * i
