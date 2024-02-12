@@ -8,4 +8,7 @@ for i=2 to n                  n-1
   A[j+1]                      n-1
 1 + n-1 + n-1 + n-1 +(n-1)*i + (n-1) * (i-1) + (n-1) * (i-1) + n-1
 
-This function is quadratic since the highest order term is (n-1) * i
+Since i is directly proportional to n, we can approximate i as n.
+1 + n-1 + n-1 + n-1 +(n-1)*n + (n-1) * (n-1) + (n-1) * (n-1) + n-1
+
+This function is quadratic since the highest order term is (n-1) * n=n^2-n
