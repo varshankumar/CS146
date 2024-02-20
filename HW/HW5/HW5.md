@@ -12,12 +12,18 @@ a=9, b=2; f(n)=O(n^(log2(9)-e))=O(n^(3.17-e)), e>0
 T(n)=THETA(n^(log2(9)))
 
 4. T(N) = 100T(N/2) + n^(log2(cn) + 1)  (c is a constant)
-a=100, b=2; f(n)=OMEGA(n^(log2(cn)+1)), e>0
+T(N/2) = 100T(N/4) + (n/2)^(log2(cn) + 1)
+T(N/4) = 100T(N/8) + (n/4)^(log2(cn) + 1)
+...
+T(N/2^k) = 100T(N/2^(k+1)) + (n/2^k)^(log2(cn) + 1)
 T(N)=THETA(n^(log2(cn)+1))
 
-5. T(N) = 4T(N/2) + n^2logn
-a=4, b=2; f(n)=THETA(n^(log2(4)-e)*log(n)), k=10
-T(N)=THETA(n^(log2(4))*log11(n))
+6. T(N) = 4T(N/2) + n^2logn
+a=4, b=2; f(n)=THETA(n^2logn), k=1, n^(logb(a))=n^(log2(4))=n^2
+T(N)=THETA(n^2log^2(n))
 
-6. T(N) = 5T(N/2) + n^2/logn
-a=5, b=2; f(n)=
+7. T(N) = 5T(N/2) + n^2/logn
+a=5, b=2; f(n)=n^2/logn, n^(logb(a))=n^(log2(5))=n^2.32
+a * f(N/b) = 5 * f(n/2)
+= 5 * (n/2)^2/log(n/2) <= c * f(n) = c*n^2/logn for c=2
+T(N)=THETA(n^2/logn)
