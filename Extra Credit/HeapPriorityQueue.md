@@ -25,4 +25,11 @@ If the numbers represent the level of priority for each element, then the elemen
 After removing 16, the heap will be rearranged to get the next highest priority element, 14, at the top.
 
 
-It is possible to use a max heap as a min heap without writing a new implementation for a min heap. We can convert a max heap into a min heap by using heapsort with the inverse condition, the min becomes the max. We can remove the topmost element and swap it with the bottom-right-most element. We can repeat this heapify process with the oppisite condition, checking if the children are smaller than the parent, instead of checking if the children are greater than the parent. 
+It is possible to use a max heap as a min heap without writing a new implementation for a min heap. We can convert a max heap into a min heap by using heapsort with the inverse condition, the min becomes the max. We can remove the topmost element and swap it with the bottom-right-most element. We can repeat this heapify process with the opposite condition, checking if the children are smaller than the parent, instead of checking if the children are greater than the parent. 
+
+Pseudocode:
+Heap(max_heap):
+ 	while heap.max>heap.max.left or heap.max>heap.max.right:
+		min_heap.append(max_heap.poll())
+		max_heap.heapify()
+ 
