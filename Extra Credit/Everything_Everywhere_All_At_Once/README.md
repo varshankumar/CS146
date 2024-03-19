@@ -15,14 +15,14 @@ Adjacency Matrix to Adjacency List:
     - For each neighbor j of i
       - if matrix[i][j] is 1, then add j to i's list
 
-Reversing Directions on Directed Graph:
-For Adjacency List:
+Reversing Directions For Adjacency List:
 - Create adjacency list with same size
 - Loop though original adjacency list
     - For each vertex list i
       - For each neighbor j
-        - Add i to j's list
-For Adjacency Matrix:
+        - Add i to j's list'=
+
+Reversing Directions For Adjacency Matrix:
 - Create adjacency matrix of same size
 - Loop through original matrix
   - For each vertix index i
