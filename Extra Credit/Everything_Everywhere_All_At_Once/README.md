@@ -4,7 +4,8 @@ Adjacency List to Adjacency Matrix:
 - Loop through the adjacency list
   - For each vertex list i
     - For each vertex j in i
-      - matrix[i][j]=1
+      - if j is in i, then matrix[i][j]=1
+      - else matrix[i][j]=0
 
 Adjacency Matrix to Adjacency List:
 - Count number of verticies, n=length of matrix
