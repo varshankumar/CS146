@@ -20,7 +20,7 @@ Reversing Directions For Adjacency List:
 - Loop though original adjacency list
     - For each vertex list i
       - For each neighbor j
-        - Add i to j's list'=
+        - Add i to j's list
 
 Reversing Directions For Adjacency Matrix:
 - Create adjacency matrix of same size
